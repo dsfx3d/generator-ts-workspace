@@ -2,18 +2,10 @@
  * @type {import('eslint').Linter.Config}
  */
 module.exports = {
-  extends: ["eslint:recommended", "plugin:prettier/recommended"],
-  overrides: [
-    {
-      files: ["*.ts", "*.tsx"],
-      extends: [
-        "eslint:recommended",
-        "plugin:@typescript-eslint/recommended",
-        "plugin:prettier/recommended",
-      ],
-      parser: "@typescript-eslint/parser",
-      plugins: ["@typescript-eslint"],
-    },
+  extends: [
+    "eslint:recommended",
+    "plugin:prettier/recommended",
+    "eslint-config-unjs",
   ],
   env: {
     browser: true,
