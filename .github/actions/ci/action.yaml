@@ -1,0 +1,27 @@
+name: 'CI'
+description: 'Runs the Continuous Integration tasks'
+inputs:
+  node-version:
+    description: 'Node version'
+    required: true
+    default: '18'
+runs:
+  using: 'composite'
+  steps:
+    - run: corepack enable
+      shell: bash
+    - uses: actions/setup-node@v3
+      with:
+        node-version: ${{ inputs.node-version }}
+        cache: 'pnpm'
+    - run: pnpm install
+      shell: bash
+    - run: pnpm lint
+      shell: bash
+    - run: pnpm test:types
+      shell: bash
+    - run: pnpm build
+      shell: bash
+    - run: pnpm vitest --coverage
+      shell: bash
+    - uses: codecov/codecov-action@v3
