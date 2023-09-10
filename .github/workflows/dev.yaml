@@ -20,9 +20,8 @@ jobs:
       - uses: ./.github/actions/ci
 
       - name: Semantic Release Dry Run
-        uses: cycjimmy/semantic-release-action@v2
+        uses: cycjimmy/semantic-release-action@v4
         with:
-          semantic_version: 17
           branches: main
           dry_run: true
         env:
