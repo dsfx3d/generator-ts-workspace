@@ -1,6 +1,6 @@
 {
   "name": "generator-ts-workspace",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Yeoman generator for TypeScript packages with opinionated defaults",
   "repository": "dsfx3d/generator-ts-workspace",
   "author": {
@@ -13,6 +13,6 @@
     "yeoman-generator"
   ],
   "dependencies": {
-    "yeoman-generator": "^7.3.2"
+    "yeoman-generator": "^5.0.0"
   }
 }
