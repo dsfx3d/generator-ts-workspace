@@ -1,4 +1,0 @@
-{
-  "extends": ["eslint-config-dsfx3d"],
-  "root": true
-}

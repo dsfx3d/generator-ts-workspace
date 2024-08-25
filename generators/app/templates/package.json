@@ -1,8 +1,8 @@
 {
-  "name": "workspace",
+  "name": "<%= name %>",
   "version": "0.0.0",
-  "description": "",
-  "license": "MIT",
+  "description": "<%= description %>",
+  "author": "<%= author %>",
   "sideEffects": false,
   "type": "module",
   "exports": {
